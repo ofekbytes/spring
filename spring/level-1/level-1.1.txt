@@ -1,0 +1,121 @@
+.
+.
+spring - 
+.
+.
+- level 1: spring
+- level 1.1 - j2ee
+- level 1.2 - spirng version
+
+
+.
+.
+- level 1: spring
+.
+
+-- spring 
+--- spring is a framework for building Enterprise Java Application (like J2EE)
+--- spring website
+    https://spring.io/
+
+.
+.
+- level 1.1 - j2ee
+.
+-- j2ee - 
+--- client-side presentation
+--- server-side presentation (jsp, servlet, xml, web-services)
+--- server-side business logic (Enterprise java beans, web-services)
+--- backend database
+
+-- j2ee versions
+-- j2ee 1.2 -> servlet, jsp, ejb(Enterprise java beans), jsm (java message service), rmi (Remote Method invocation)
+-- j2ee 1.3 -> ejb, cmp, jca
+-- j2ee 1.4 -> web services, mgmt, deployment
+-- jee 5 (java Enterprise edition 5) -> 
+   ejb3 (enterprise java beans 3), jpa (java persistence API), Jsf (java server face), jaxB (java api for xml binding), jax-ws (java web services - (soap) )
+-- jee 6 -> pruning, ease of use, jax-rs, cdi (context dependency injection), bean-validation
+-- jee 7 -> jms2 (java message services), batch, concurrency, web sockets.
+.
+.
+- level 1.2 - spirng 5
+.
+-- java version: minimum requirements: java 1.8 (java 8)
+-- spring mvc (servlet 4.0)
+-- spring framework: spring webFlux.
+-- java pojo (Plain-Old-Java-Objects).
+-- dependency injection to promote loose coupling. (specify the wiring via a configuration file - or annotations.)
+-- declarative programming with AOP (Aspect-Oriented-programming) - add some application wide services to your given Objects.
+.
+.
+- container: 
+
+-- beans
+
+-- core - core container - 
+--- core container is the heart throb (heart bit), the main item of spring.
+--- core container manages how beans are created - bean factory for creating beans.
+--- core container can reconfig files for setting properties, independencies, 
+--- spring core container context that hold the beans in memory.  
+
+-- spEl - spEl (spring-expression-language) 
+--- a language that we can use within the config files to refer to other beans.
+
+-- context - context is the spring container.
+.
+.
+- infrastruction
+-- AOP (Aspect-Oriented-programming)
+   add functionality to objects declarative.
+   allow you to create these application wide services like:
+   loggin, security, transactions, instrumentation.
+   and then you can apply these services to your Objects.
+   having support by adding config file -or- @annotation  and that service
+   will be applied to you applicaiton.
+-- aspects 
+-- instrumentation
+-- messaging 
+.
+.
+- data access layer (data access section / integration) 
+
+-- data access layer are used to communicate with the database relational database -or- nosql database.(message queue)
+
+-- jdbc - spring jdbc - reduce your jdbc code.
+
+-- orm - (object to relational mapping) - 
+--- allow you integration/hook with "hibernate" and jpa  (a lot of support and a lot of synergy between spring and hibernate)
+
+-- transactions - use transactions on methods -or- database call -or- on the web.
+
+-- oxm - 
+
+-- jms (java message service) - allow you to send message to message queue in asynchronous. (cort part of java EE)
+---it porvide helper classes to allow you to make use of jms (java message service)
+
+.
+.
+- web layer:
+-- servlet -
+-- webSocket - 
+-- web -
+-- portlet - 
+ 
+
+
+//delete when done//
+.
+.
+- level 1.1 - subject 1
+.
+
+--  subject 1
+   
+
+--- example: 
+    <file-1>: few words on file
+    <file-1>: few words on file
+
+
+-!- notes
+
