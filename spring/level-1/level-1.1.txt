@@ -5,7 +5,10 @@ spring -
 .
 - level 1: spring
 - level 1.1 - j2ee
-- level 1.2 - spirng version
+- level 1.2 - spirng
+- level 1.3 - spirng project
+- level 1.4 - devlopment enviromnent
+- level 1.5 - installing tomcat
 
 
 .
@@ -38,7 +41,7 @@ spring -
 -- jee 7 -> jms2 (java message services), batch, concurrency, web sockets.
 .
 .
-- level 1.2 - spirng 5
+- level 1.2 - spirng
 .
 -- java version: minimum requirements: java 1.8 (java 8)
 -- spring mvc (servlet 4.0)
@@ -73,7 +76,11 @@ spring -
    having support by adding config file -or- @annotation  and that service
    will be applied to you applicaiton.
 -- aspects 
--- instrumentation
+-- instrumentation - 
+   class loader implementations to work with diffrent app service.
+   example: create java agent for remotely monitor and instrument your application using jmx.
+   normally we will use the agnets porvided by the spring team -or- your app server vendor.
+   aop, bytecode manipulation...
 -- messaging 
 .
 .
@@ -92,30 +99,80 @@ spring -
 
 -- jms (java message service) - allow you to send message to message queue in asynchronous. (cort part of java EE)
 ---it porvide helper classes to allow you to make use of jms (java message service)
-
 .
 .
-- web layer:
+- web layer: web releted classes - 
+  spring mvc framework building web applicaiton using the "sprint core",
+  spring mvc (sprint controller, spring view, spring modules)
 -- servlet -
 -- webSocket - 
 -- web -
 -- portlet - 
- 
 
-
-//delete when done//
+-!- you can interface other modules with other technologies like JSP....
+--- support for remoting - web remote - external clients make calls to  the spring container.
+    (like rpc - remote procedure calls ) for distributes computed.
 .
 .
-- level 1.1 - subject 1
+- test layer
+-- unit - support ttd (test driven development), mock object (mocking out servlet), jdni access...
+-- integration - creating an application context and wiring up your desired object.
+-- mock 
 .
+.
+- level 1.3 - spirng project
+.
+-- sprint project are add-ons, additional spring modules build on top of the core spring framework.
+--- spring cloud, spring data (database).
+--- spring batch (batch processes).
+--- spring security (securing your application).
+--- spring for Android.
+--- spring for web flow (web flow for x number of pages).
+--- spring web services - for restfull -and- soap web services.
+--- spring ldap - accessing ldap servers.
 
---  subject 1
-   
+-!- spring website
+    https://spring.io/
 
---- example: 
-    <file-1>: few words on file
-    <file-1>: few words on file
+-!- spring first demo
+    https://www.youtube.com/watch?v=lhkwLtDIMHI
+
+-!- spring start a project 
+    https://start.spring.io/
+
+.
+.
+- level 1.4 - devlopment enviromnent
+.
+-- software needed
+--- java - jdk8...
+--- java app server (glassfish, jboss, weblogic, apache, apache tomcat ....)
+
+-- spring 5 need jdk 8 (1.8) or higher
+
+-- jdk 8
+https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+-- jdk 10
+https://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-3848520.html
+
+-- jdk 11
+https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html
+
+-- jdk 12
+https://www.oracle.com/technetwork/java/javase/downloads/jdk12-downloads-5295953.html
 
 
--!- notes
+- we are going to use:
+-- java web development - jas (java application server): tomcat
+-- java ide (integrated development enviromnent): eclipse ide
+.
+.
+- level 1.5 - installing tomcat
+.
+--
+
+
+
+
 
