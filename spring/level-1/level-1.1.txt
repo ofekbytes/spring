@@ -245,6 +245,32 @@ https://www.oracle.com/technetwork/java/javase/downloads/jdk12-downloads-5295953
     <Ex003.java> --> main() method.
     <Coach.java> --> interface.
 
+- spring provides an object factory -
+-- application ("my-app") talk to spring and ask for an object
+   based on a configuration file -or- annotation.
+-- spring will give you the appropriate implementation.
+-- now your application ("my-app") is configuable and will have full support for that based on our application requirements. 
+
+[my-app] <----[give me "coach" object]----> [object factory]
+
+[object factory] ----> configuration --> [BaseballCoach] / [TrackCoach] / [CricketCoach]
+
+spring --> [object factory]
+
+-- primarty function
+--- create and manage objects (inversion of Control)
+--- inject object's dependencies (dependency injection)
+
+-- configuring spring container
+--- xml configuration file (legacy, but most legacy app will use this)
+--- Java Annotation (modern)
+--- Java Source Code (modern)
+
+-- spring development process
+--- configure your spring beans
+--- create spring container
+--- retrieve beans from spring container.
+
 
 
 
