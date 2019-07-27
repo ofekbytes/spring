@@ -228,9 +228,22 @@ https://www.oracle.com/technetwork/java/javase/downloads/jdk12-downloads-5295953
 -1- create a package: "com.learn.springexample"
 -2- create a class: "BaseballCoach"
 
-- /ioc-examples/ioc-001 - ico - Rough Prototype Part 1 -> 2 class.
-- /ioc-examples/ico-002 - ico - Rough Prototype Part 1 -> 2 class and 1 interface.
-- /ioc-examples/ico-003 - ico - Rough Prototype Part 2 -> 2 class and 1 interface.
+- Inversion Of Control (IOC) packages:
+
+-- /ioc-examples/ex001 -  2 classes,  2 methods.
+    <BaseballCoach.java > --> (BaseballCoach) getDailyWorkout() method
+    <Ex001.java> --> main() method.
+
+-- /ioc-examples/ex002 - 3 classes, 2 methods, 1 interface.
+    <BaseballCoach.java > --> (BaseballCoach) getDailyWorkout() method
+    <Ex002.java> --> main() method.
+    <Coach.java> --> interface.
+
+-- /ioc-examples/ex003 - 4 classes, 3 methods, 1 interface.
+    <BaseballCoach.java> --> (BaseballCoach) getDailyWorkout() method
+    <TrackCoach.java>  --> (TrackCoach) getDailyWorkout() method
+    <Ex003.java> --> main() method.
+    <Coach.java> --> interface.
 
 
 
