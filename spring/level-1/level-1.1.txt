@@ -211,7 +211,7 @@ https://www.oracle.com/technetwork/java/javase/downloads/jdk12-downloads-5295953
    (The approach of outsourcing the construction and managment of object).
 
 -- the design / the construction / management of the object 
--- outsource (object factory) creation / managment of eht object 
+-- outsource (object factory) creation / managment of the object 
 
 --- example:
 
