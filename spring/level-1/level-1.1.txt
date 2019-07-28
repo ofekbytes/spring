@@ -267,12 +267,98 @@ spring --> [object factory]
 --- Java Source Code (modern)
 
 -- spring development process
---- configure your spring beans
---- create spring container
---- retrieve beans from spring container.
+-step 1- configure your spring beans
+-step 2- create spring container
+-step 3- retrieve beans from spring container.
+.
+.
+-step 1- configure your spring beans:
+.
+-- using xml configuration file. "applicationContext.xml" 
+   using bean & bean id "myCoach"
+   using the full class "
+
+---["applicationContext.xml" ]-----
+    <beans ...> 
+        <bean id="myCoach"
+        class="package com.ofekbytes.springExamples.pk001.ex004/BaseballCoach">
+    </beans>
+-----------------------------------
+.
+.
+-step 2- create spring container
+
+-- spring container is know as "Applicationcontext"
+
+-- specialized implementations 
+--- classPathXmlApplicationContext - reading xml from the class path
+--- AnnotationConfigApplicationContext - an annotation config 
+--- GenericWebApplicationContext - web application context 
+--- ....
+
+-!- Spring Core Container: this is the base module of Spring 
+    and provides spring containers (BeanFactory and ApplicationContext).
+    <https://en.wikipedia.org/wiki/Spring_Framework>    
 
 
+// creating a spring container 
+// reading an xml file thats on my class path by using "ClassPathXmlApplicationContext",
+// i construct the object and pass it in the configuration file 
+// "applicationContext.txt"
+
+ClassPathXmlApplicationContext context = 
+new ClassPathXmlApplicationContext ("applicationContext.txt");
+.
+.
+-step 3- retrieve beans from spring container.
+
+//step 2 - we created our context 
+ClassPathXmlApplicationContext context = 
+new ClassPathXmlApplicationContext ("applicationContext.txt");
+
+//step 3 - retrieve the bean from the container 
+Coach theCoach = context.getBean("myCoach", Coach.class)
+
+//Step 1 - "applicationContext.xml" 
+---["applicationContext.xml"]-----
+    <beans ...> 
+        <bean id="myCoach"
+        class="package com.ofekbytes.springExamples.pk001.ex004/BaseballCoach">
+    </beans>
+
+// step 3 "myCoach" match up to step 1 "id="myCoach"
+// step 3 "Coach.class" is the name of the interface that step 1 "BaseballCoach" is implement
+// "coach.class" is the interface
+// "BaseballCoach" is the implementation
+// this is how we retrieving a bean from spring container.
 
 
+-----------------------------------------------------------------------------
+
+Q: 
+What is a Spring Bean?
+
+A: 
+"Spring Bean" is simply a Java object.
+When Java objects are created by the Spring Container, then Spring refers to them as "Spring Beans".
+Spring Beans are created from normal Java classes .... just like Java objects.
 
 
+" In Spring, the objects that form the backbone of your application 
+  and that are managed by the Spring IoC container are called beans. 
+  A bean is an object that is instantiated, assembled, 
+  and otherwise managed by a Spring IoC container. 
+  Otherwise, a bean is simply one of many objects in your application. 
+  Beans, and the dependencies among them, 
+  are reflected in the configuration metadata used by a container."
+
+Source: https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#beans-introduction
+
+-----------------------------------------------------------------------------
+
+todo: fix package  and <keep>
+com.ofekbytes.springExamples.pk001.ex004
+
+
+todo: keep package for a little white and <delete>
+com.ofekbytes.springExamples.pk001.ex005
