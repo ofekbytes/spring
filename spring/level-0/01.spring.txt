@@ -1,0 +1,155 @@
+
+
+---[Spring Overview]---
+
+- Spring home page
+-- url: https://spring.io/
+
+
+- spring 
+-- pojo - Plain Old Java Object
+-- Dependency injcetion - to promote loose coupling (annotations).
+-- AOP - Aspect-Oriented-Programming
+-- minimize boilerplate java code ???
+
+.
+.
+- spring core container
+-- Beans
+-- core - Bean factory
+--- heartthrob/main item of Spring
+--- it has a Bean factory (for creating the Beans)
+---- can reconfig files for setting properties, independencies, 
+     (spring container that holds the beans in memory).
+
+-- SpEL - Spring Expression Language 
+--- Spring Expression Language 
+--- a little language we can use within the config files to refer to other Beams.
+--- core container for creating beans and making those beans available.
+
+
+.
+.
+- Spring Infastructure 
+-- AOP - Aspect Oriented Programming
+--- allows you to create application wide services, 
+    Examples: logging, security, transcation, instrumentation.
+-- apply these services to your objects in a declarative statement.
+   add "config" in the "config" file -or- annotations and this 
+   service will be apply to your application.(transcation work)
+
+-- Aspect
+
+-- instrumentation Module - 
+--- using class loader implementations to work with diffrent app service.
+    example: create a "java agent" to remotely monitor and instrument your java application using JMX.
+    (JMX - Java Management Extensions)
+    -!- using agent provided by spring team -or- app server vendor. 
+    behind the scenes is using tools like: 
+    AOP (Aspect Oriented Programming), bytecode manipulation ,etc.
+
+--  JMX (Java Management Extensions) is a Java technology that supplies tools for managing 
+    and monitoring applications, system objects, devices (such as printers) 
+    and service-oriented networks. 
+    Those resources are represented by objects called MBeans (for Managed Bean). 
+    In the API, classes can be dynamically loaded and instantiated. 
+    Managing and monitoring applications can be designed and developed 
+    using the Java Dynamic Management Kit.
+
+    (https://en.wikipedia.org/wiki/Java_Management_Extensions)
+
+-- messaging 
+
+.
+.
+- Spring Data Access Layer
+
+-- JDBC - Java Database Connectivity 
+          spring JDBC classes (helper classes)
+-- ORM - Object Relational Mapping 
+         (integration/connection with Hibernate or JPA)
+-- transcation - transcation manager -or- supporting transcation.
+                 using transcation for methods, Database calls. etc...
+                 transcation using AOP (Aspect Oriented Programming) behind the scenes
+-- OXM - 
+-- JMS - Java Message service
+         send message to message queue - asynchronous way (java-EE)
+         using Spring JMS integration.
+
+.
+.
+- Web Layer (web Module) - 
+-- all web related classes. 
+-- home of the Spring MVC framework - 
+-- building "Web Application" using Spring MVC - "spring core", "spring Controllers", "spring View".
+-- support for remoting, 
+   web remoting - you can have external clients make calls into the spring container.
+   like rpc (Remote Procedure calls) -or- like distributed computers.
+
+-- servlet
+-- WebSocket
+-- Web
+-- Portlet
+
+
+.
+.
+- Test Layer - 
+-- Test Driven Development
+
+-- Unit
+-- Integration
+-- Mock
+
+.
+. - asp / rest 
+. - microservices
+. - 
+- 
+
+.
+.
+- Spring Projects
+
+-- Additional Spring modules build-on top of the core Spring Framework 
+   like a add-ons. (you only use what you need).
+--- Spring Cloud - Cloud development.
+--- Spring Data - Data for DataBase integration.
+--- Spring Batch - for creating batch processes.
+--- Spring security - securing your application.
+--- Spring for Android - 
+--- Spring Web Flow - web flow over X number of pages.
+--- Spring Web services - doing Restful and soap
+--- Spring LDAP - using ldap
+
+-- Spring FrameWork wikipedia
+https://en.wikipedia.org/wiki/Spring_Framework
+
+-- spring home page:
+https://spring.io/
+
+
+.
+.
+- Software:
+
+.
+.
+- java IDE (java Integrated Development Enviroment) 
+-- eclipse
+-- rad 
+------ continue list 
+
+.
+.
+- Java App Server:
+-- GlassFish
+-- JBoss
+-- WebLogic
+-- Tomcat
+------ continue list 
+
+
+
+
+

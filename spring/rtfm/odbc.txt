@@ -1,0 +1,8 @@
+
+odbc
+
+https://he.wikipedia.org/wiki/ODBC
+
+ODBC is used between applications 
+
+

@@ -1,0 +1,43 @@
+---[j2ee]---
+- client-side
+- server-side (jsp, servlets, xml, web servies)
+-- server-side - Business Logic (enterprise JavaBeans, Web Services)
+-- DataBase (BackEnd)
+
+
+--[j2ee evolotion]---
+- servlets -
+- jsp - 
+- jsf - 
+- ejb - Enterprise JavaBeans
+- jms - Java Message Services
+- rmi - remote method invocation
+- cmp - container managed persistence
+- jca - java connector architecfture
+- jpa - java persistence API
+- jsf - java server faces
+- jaxb - java api for XML binding
+- jax-ws - java web servies (soap)
+- jax-rs - java web servies (rest)
+- cdi - context dependency injection (ioc)
+- jms - java message Services
+- jsm 2 -
+- web sockets -
+- batch -
+- annotations -
+
+
+---[java EE vs Spring ]---
+- mvc - 
+- implemeting - 
+- DataBase - 
+- Hibernate - 
+
+
+---[Spring ???]---
+- java - 8
+- mvc - API 4.0
+- Spring WebFlux - reactive programming language ?
+
+
+

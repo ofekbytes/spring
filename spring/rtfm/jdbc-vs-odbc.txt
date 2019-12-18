@@ -1,0 +1,12 @@
+
+jdbc -vs- odbc
+
+JDBC is: Java Database Connectivity is a Java API for connecting programs 
+written in Java to the data in relational databases. 
+
+ODBC is used between applications 
+
+JDBC is used by Java programmers to connect to databases With a small "bridge" program, 
+you can use the JDBC interface to access ODBC- accessible databases.
+
+

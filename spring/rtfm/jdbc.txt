@@ -1,0 +1,14 @@
+
+JDBC
+
+https://en.wikipedia.org/wiki/Open_Database_Connectivity
+
+
+
+JDBC (Java Database Connectivity) is a Java API (application programming interface) 
+for connecting programs written in Java to the data in relational databases. 
+JDBC is used by Java programmers to connect to databases With a small "bridge" program,
+you can use the JDBC interface to access ODBC- accessible databases.
+It is a Java-based data access technology used for Java database connectivity. 
+It is part of the Java Standard Edition platform, from Oracle Corporation.
+
