@@ -8,8 +8,7 @@
 --[j2ee evolotion]---
 - servlets -
 - jsp - 
-- jsf - 
-- ejb - Enterprise JavaBeans
+- ejb - Enterprise Java Beans
 - jms - Java Message Services
 - rmi - remote method invocation
 - cmp - container managed persistence
@@ -25,6 +24,8 @@
 - web sockets -
 - batch -
 - annotations -
+- wsmd - Web Service Management Deployment - 
+- concurrency - 
 
 
 ---[java EE vs Spring ]---
